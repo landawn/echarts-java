@@ -14,12 +14,23 @@
 
 package com.landawn.echarts;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
 /**
- * Hello ECharts!
- *
+ *  
+ * @see {@link https://echarts.apache.org/en/option.html#title}
  */
-public class App {
-    public static void main(String[] args) {
-        System.out.println("Hello ECharts!");
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Accessors(fluent = true)
+public class Color {
+    String value;
+
+    public static Color of(String value) {
+        return new Color(value);
     }
 }

@@ -21,16 +21,26 @@ import lombok.experimental.Accessors;
 
 /**
  *  
- * @see {@link https://echarts.apache.org/en/option.html}
+ * @see {@link https://echarts.apache.org/en/option.html#title}
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Accessors(fluent = true)
-public class Optoin {
-    private Title title;
-    private Legend legend;
-
-    // TODO
+public class TextStyle {
+    private Color color;
+    private String fontStyle;
+    private String fontWeight;
+    private String fontFamily;
+    private int fontSize;
+    private int lineHeight;
+    private String width;
+    private String heigh;
+    private String textBorderColor;
+    private int textBorderWidth;
+    private String textShadowColor;
+    private int textShadowBlur;
+    private int textShadowOffsetX;
+    private int textShadowOffsetY;
 
 }
